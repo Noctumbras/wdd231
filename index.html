@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/nav.css">
+
+    <script src="scripts/nav.js" defer></script>
 </head>
 <body>
-    Index
+    <header>
+        <h1>Website Name</h1>
+
+        <button id="nav-button"></button>
+        <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">News & Events</a></li>
+            <li><a href="#">Dedicated Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <footer>
+        <div class="socials">
+            <a href="#"><img src="images/github.svg" alt="github logo"></img></a>
+            <a href="#"><img src="images/linkedin.svg" alt="github logo"></img></a>
+        </div>
+    </footer>
 </body>
 </html>

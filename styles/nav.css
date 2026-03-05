@@ -1,0 +1,28 @@
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+#nav-button::before {
+  content: "\2630";
+}
+#nav-button.show::before {
+  content: "\00D7";
+}
+
+@media screen and (min-width: 500px) {
+    .navigation {
+        display: block;
+    }
+
+    #nav-button {
+        display: none;
+    }
+}
