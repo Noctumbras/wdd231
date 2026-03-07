@@ -1,0 +1,113 @@
+header {
+    background: rgb(44, 43, 42);
+    color: #eee;
+    padding: 2rem;
+}
+
+header span {
+    display: block;
+}
+
+.navigation {
+    list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #131313;
+	align-items: center;
+    height: 100%;
+}
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation .current {
+    background-color: grey;
+}
+
+.navigation a {
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+main {
+    display: grid;
+    text-align: center;
+}
+
+main h1 {
+    grid-column: 1 / 4;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 0;
+    border-style: solid;
+}
+
+#card-about-me {
+    width: 100%;
+    height: 100%;
+    margin-left: 6rem;
+}
+
+#card-photo {
+    width: 60%;
+    margin-right: 6rem;
+}
+
+#card-courses {
+    grid-column: 1 / 4;
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    align-self: stretch;
+    margin: 0;
+    background-color: gray;
+    height: 2em;
+    width: 100%;
+}
+
+#card-about-me p {
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#card-photo img {
+    width: auto;
+    height: auto;
+    margin: auto;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#card-courses {
+    display: grid;
+}
+
+#card-courses p {
+    background-color: gray;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(44, 43, 42);
+    color: #eee;
+    padding: 2rem;
+    text-align: center;
+}

@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <meta name="author" content="Stephen Sanders">
+    <meta name="description" 
+        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Home page with various student info and links to projects.">
+    <title>WDD 231 - Web Frontend Development - Stephen Sanders</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/index_small.css">
 
+    <script src="scripts/footer.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,19 +22,46 @@
 
         <button id="nav-button"></button>
         <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="current"><a href="#">News & Events</a></li>
-            <li><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="card" id="card-about-me">
+            <h2>About Me</h2>
+            <p>My name is Stephen. I was born in California but I moved to South Carolina at a young age.
+                I lived there a majority of my life and now live in Illinois. I'm a full-time student and 
+                like to game and code to pass the time.
+            </p>
+        </section>
+
+        <section class="card" id="card-photo">
+            <h2>Student Photo</h2>
+            <img src="images/selfie.webp" alt="An image of the webpage creator.">
+        </section>
+
+        <section class="card" id="card-courses">
+            <h2>Web Certificate Courses</h2>
+            <button id="filter-all">All</button>
+            <button id="filter-cse">CSE</button>
+            <button id="filter-wdd">WDD</button>
+            <ul id="course-list"></ul>
+            <p id="credits"></p>
+        </section>
+    </main>
 
     <footer>
         <div class="socials">
             <a href="#"><img src="images/github.svg" alt="github logo"></img></a>
             <a href="#"><img src="images/linkedin.svg" alt="github logo"></img></a>
         </div>
+        <span id="current-year"></span>
+        <p id="last-modified"></p>
     </footer>
 </body>
 </html>
