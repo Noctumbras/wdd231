@@ -11,14 +11,19 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/index_small.css">
+    <link rel="stylesheet" href="styles/index_larger.css">
 
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Website Name</h1>
+        <h1><img src="images/house-fill.svg" alt="logo of a home">Website Name</h1>
 
         <button id="nav-button"></button>
         <nav id="nav-bar" class="navigation">
@@ -47,18 +52,23 @@
 
         <section class="card" id="card-courses">
             <h2>Web Certificate Courses</h2>
-            <button id="filter-all">All</button>
-            <button id="filter-cse">CSE</button>
-            <button id="filter-wdd">WDD</button>
-            <ul id="course-list"></ul>
-            <p id="credits"></p>
+            <div>
+                <div id="filter-buttons-container">
+                    <button id="filter-all">All</button>
+                    <button id="filter-cse">CSE</button>
+                    <button id="filter-wdd">WDD</button>
+                </div>
+                <ul id="course-list"></ul>
+                <p id="credits"></p>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="socials">
-            <a href="#"><img src="images/github.svg" alt="github logo"></img></a>
-            <a href="#"><img src="images/linkedin.svg" alt="github logo"></img></a>
+            <a href="https://github.com/"><img src="images/github.svg" alt="github logo"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="linkedin logo"></a>
+            <a href="https://x.com"><img src="images/twitter-x.svg" alt="x logo"></a>
         </div>
         <span id="current-year"></span>
         <p id="last-modified"></p>

@@ -88,11 +88,16 @@ function populateCourseList(list)
 {
     courseList.innerHTML = '';
     list.forEach(course => {
-        courseList.innerHTML += `<p class="course">${course.subject} ${course.number}</p>`;
+        if (course.completed){
+            courseList.innerHTML += `<p class="course">✓ ${course.subject} ${course.number}</p>`;
+        }
+        else {
+            courseList.innerHTML += `<p class="course">${course.subject} ${course.number}</p>`;
+        }
     });
 
     let creditsCount = list.reduce( ((total, course) => total + course.credits), 0);
-    credits.innerHTML = `The total credits for courses listed above is ${creditsCount}`;
+    credits.innerHTML = `The total credits for these courses is ${creditsCount}.`;
 };
 
 populateCourseList(courses);

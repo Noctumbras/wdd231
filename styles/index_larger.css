@@ -1,0 +1,40 @@
+@media screen and (min-width: 500px) {
+    main {
+        display: grid;
+        text-align: center;
+    }
+    
+    main h1 {
+        grid-column: 1 / 4;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .card {
+        margin-top: 0;
+        border-bottom-style: solid;
+    }
+
+    #card-about-me {
+        height: auto;
+        margin-left: 6rem;
+    }
+
+    #card-about-me p {
+        padding: 5rem;
+    }
+
+    #card-photo {
+        width: 60%;
+        height: auto;
+        margin-right: 6rem;
+    }
+
+    #card-courses {
+        margin-top: 2rem;
+        grid-column: 1 / 4;
+    }
+}

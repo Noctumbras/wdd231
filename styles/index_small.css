@@ -1,23 +1,31 @@
+body {
+    font-family: "Source Serif 4", serif;
+}
+
 header {
     background: rgb(44, 43, 42);
     color: #eee;
     padding: 2rem;
 }
 
+header img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
 header span {
     display: block;
 }
 
+#nav-button {
+    width: 100%;
+}
+
 .navigation {
-    list-style: none;
-	display: flex;
-	flex-wrap: wrap;
 	background-color: #131313;
 	align-items: center;
     height: 100%;
-}
-.navigation li {
-	flex: 1 1 auto;
+    
 }
 
 .navigation .current {
@@ -37,13 +45,19 @@ header span {
 	text-decoration-color: yellow;
 }
 
-main {
-    display: grid;
+.navigation ul {
+    list-style: none;
+    font-size: 2rem;
+    flex-direction: column;
+    margin-top: 0;
     text-align: center;
+    padding-right: 2rem;
 }
 
-main h1 {
-    grid-column: 1 / 4;
+button {
+    padding: 1rem;
+    font-size: 2rem;
+    width: auto;
 }
 
 .card {
@@ -51,25 +65,49 @@ main h1 {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: 0;
     border-style: solid;
+    border-bottom-style: none;
 }
 
 #card-about-me {
     width: 100%;
     height: 100%;
-    margin-left: 6rem;
 }
 
 #card-photo {
-    width: 60%;
-    margin-right: 6rem;
+    width: 100%;
+    height: 100%;
 }
 
 #card-courses {
-    grid-column: 1 / 4;
     width: 100%;
     height: auto;
+}
+
+#card-courses div {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+
+#course-list {
+    grid-row: 2 / 3;
+    text-align: center;
+    padding-right: 2rem;
+}
+
+#course-list p {
+    padding: 1rem;
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#credits {
+    grid-row: 3 / 4;
 }
 
 .card h2 {
@@ -94,11 +132,7 @@ main h1 {
     max-height: 40%;
 }
 
-#card-courses {
-    display: grid;
-}
-
-#card-courses p {
+.course {
     background-color: gray;
 }
 
@@ -110,4 +144,10 @@ footer {
     color: #eee;
     padding: 2rem;
     text-align: center;
+}
+
+footer img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
 }
