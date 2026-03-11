@@ -21,11 +21,23 @@ header span {
     width: 100%;
 }
 
+#nav-button::before {
+  content: "\2630";
+}
+#nav-button.show::before {
+  content: "\00D7";
+}
+
 .navigation {
+    display: none;
 	background-color: #131313;
 	align-items: center;
     height: 100%;
     
+}
+
+.navigation.show {
+    display: block;
 }
 
 .navigation .current {
@@ -46,6 +58,7 @@ header span {
 }
 
 .navigation ul {
+    display: flex;
     list-style: none;
     font-size: 2rem;
     flex-direction: column;

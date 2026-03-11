@@ -8,6 +8,14 @@
         grid-column: 1 / 4;
     }
 
+    .navigation {
+        display: block;
+    }
+
+    #nav-button {
+        display: none;
+    }
+
     .navigation ul {
         flex-direction: row;
         text-align: left;
