@@ -1,0 +1,60 @@
+{
+    "companies": [
+    {
+        "name": "Abble",
+        "address": "111 Apple Street",
+        "phoneNumber": "555-1234",
+        "url": "abbleRealWebsite.com",
+        "imageFile": "images/apple.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Macrosoft",
+        "address": "123 Macro Street",
+        "phoneNumber": "555-1987",
+        "url": "freeWindowInstallation.com",
+        "imageFile": "images/window.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Abble",
+        "address": "111 Apple Street",
+        "phoneNumber": "555-1234",
+        "url": "abbleRealWebsite.com",
+        "imageFile": "images/apple.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Abble",
+        "address": "111 Apple Street",
+        "phoneNumber": "555-1234",
+        "url": "abbleRealWebsite.com",
+        "imageFile": "images/apple.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Abble",
+        "address": "111 Apple Street",
+        "phoneNumber": "555-1234",
+        "url": "abbleRealWebsite.com",
+        "imageFile": "images/apple.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Abble",
+        "address": "111 Apple Street",
+        "phoneNumber": "555-1234",
+        "url": "abbleRealWebsite.com",
+        "imageFile": "images/apple.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Abble",
+        "address": "111 Apple Street",
+        "phoneNumber": "555-1234",
+        "url": "abbleRealWebsite.com",
+        "imageFile": "images/apple.webp",
+        "membershipLevel": 3
+    }
+    ]
+}
