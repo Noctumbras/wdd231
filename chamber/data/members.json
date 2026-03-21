@@ -3,7 +3,7 @@
     {
         "name": "Abble",
         "address": "111 Apple Street",
-        "phoneNumber": "555-1234",
+        "phoneNumber": "(555) 555-1234",
         "url": "abbleRealWebsite.com",
         "imageFile": "images/apple.webp",
         "membershipLevel": 3
@@ -11,50 +11,50 @@
     {
         "name": "Macrosoft",
         "address": "123 Macro Street",
-        "phoneNumber": "555-1987",
-        "url": "freeWindowInstallation.com",
+        "phoneNumber": "(555) 555-1987",
+        "url": "freeWindowInstall.com",
         "imageFile": "images/window.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Goggle",
+        "address": "1313 Lookup Avenue",
+        "phoneNumber": "(555) 555-9050",
+        "url": "goggleIt.com",
+        "imageFile": "images/goggles.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Dog City",
+        "address": "33 Sausage Street",
+        "phoneNumber": "(555) 555-4545",
+        "url": "dogCityHotDogs.com",
+        "imageFile": "images/hot_dog.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Walls Mart",
+        "address": "1001 Wally Street",
+        "phoneNumber": "(555) 555-1111",
+        "url": "wallsMart.com",
+        "imageFile": "images/wall.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "techSmart",
+        "address": "42 Adams Street",
+        "phoneNumber": "(555) 555-1337",
+        "url": "techSmart.com",
+        "imageFile": "images/computer.webp",
         "membershipLevel": 2
     },
     {
-        "name": "Abble",
-        "address": "111 Apple Street",
-        "phoneNumber": "555-1234",
-        "url": "abbleRealWebsite.com",
-        "imageFile": "images/apple.webp",
-        "membershipLevel": 3
-    },
-    {
-        "name": "Abble",
-        "address": "111 Apple Street",
-        "phoneNumber": "555-1234",
-        "url": "abbleRealWebsite.com",
-        "imageFile": "images/apple.webp",
-        "membershipLevel": 3
-    },
-    {
-        "name": "Abble",
-        "address": "111 Apple Street",
-        "phoneNumber": "555-1234",
-        "url": "abbleRealWebsite.com",
-        "imageFile": "images/apple.webp",
-        "membershipLevel": 3
-    },
-    {
-        "name": "Abble",
-        "address": "111 Apple Street",
-        "phoneNumber": "555-1234",
-        "url": "abbleRealWebsite.com",
-        "imageFile": "images/apple.webp",
-        "membershipLevel": 3
-    },
-    {
-        "name": "Abble",
-        "address": "111 Apple Street",
-        "phoneNumber": "555-1234",
-        "url": "abbleRealWebsite.com",
-        "imageFile": "images/apple.webp",
-        "membershipLevel": 3
+        "name": "ProBrass",
+        "address": "1200 Parade Drive",
+        "phoneNumber": "(555) 555-1212",
+        "url": "proBrass.com",
+        "imageFile": "images/euphonium.webp",
+        "membershipLevel": 2
     }
     ]
 }

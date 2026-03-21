@@ -1,0 +1,76 @@
+body {
+    font-family: "Source Serif 4", serif;
+    background-color: rgba(252, 231, 140, 0.842);
+}
+
+#directory-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 0.5fr));
+}
+
+main button {
+    margin: 1rem;
+    background-color: white;
+    border-color: blue;
+}
+
+#companies-grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#companies-grid.hide {
+    display: none;
+}
+
+#companies-list {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+#companies-list.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-card img {
+    width: 80%;
+    height: 40%;
+}
+
+.grid-card {
+    width: 60%;
+    height: auto;
+    border-style: double;
+    border-color: black;
+    background-color: white;
+    text-align: center;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.grid-card a {
+    align-self: center;
+}
+
+.list-card {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(75px, 0.40fr));
+    background-color: gray;
+    align-items: center;
+}
+
+.list-card * {
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.list-card:nth-child(even) {
+    background-color: darkgray;
+}
