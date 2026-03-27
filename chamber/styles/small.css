@@ -8,6 +8,10 @@ body {
     grid-template-columns: repeat(2, minmax(100px, 0.5fr));
 }
 
+main {
+    display: block;
+}
+
 main button {
     margin: 1rem;
     background-color: white;
@@ -73,4 +77,9 @@ main button {
 
 .list-card:nth-child(even) {
     background-color: darkgray;
+}
+
+picture {
+    width: 100%;
+    height: 100%;
 }

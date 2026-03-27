@@ -23,7 +23,7 @@
 
     <script src="../scripts/footer.js" defer></script>
     <script src="../scripts/nav.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,13 +31,13 @@
 </head>
 <body>
     <header>
-        <h1><img src="images/letter-h.svg" alt="logo of the letter H">Hartsville Chamber of Commerce</h1>
+        <h1><img src="images/letter-h.svg" alt="logo of the letter H" loading="lazy">Hartsville Chamber of Commerce</h1>
 
         <button id="nav-button"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="#">Directory</a></li>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
@@ -45,12 +45,29 @@
     </header>
 
     <main>
-        <div id="directory-buttons">
-            <button id="grid-view">Grid</button>
-            <button id="column-view">List</button>
-        </div>
-        <ul id="companies-grid"></ul>
-        <ul id="companies-list"></ul>
+        <picture id="hero-image">
+            <source srcset="images/hero-image-medium.webp" media="(min-width: 500px)" width="1280" height="960">
+            <img src="images/hero-image-small.webp" alt="hero image" width="640" height="480" loading="lazy">
+        </picture>
+        <section id="call-to-action">
+            <a href="#">Come join us!</a>
+        </section>
+
+        <h2>Home</h2>
+        <section id="home-cards-section">
+            <section class="home-card" id="current-events">
+                <h3>Events</h3>
+
+            </section>
+            <section class="home-card" id="current-weather">
+                <h3>Current Weather</h3>
+
+            </section>
+            <section class="home-card" id="weather-forecast">
+                <h3>Weather Forecast</h3>
+            </section>
+            <ul id="spotlights"></ul>
+        </section>
     </main>
 
     <footer>
@@ -63,9 +80,9 @@
         
 
         <div class="socials">
-            <a href="https://github.com/"><img src="../images/github.svg" alt="github logo"></a>
-            <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="linkedin logo"></a>
-            <a href="https://x.com"><img src="../images/twitter-x.svg" alt="x logo"></a>
+            <a href="https://github.com/"><img src="../images/github.svg" alt="github logo" loading="lazy"></a>
+            <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="linkedin logo" loading="lazy"></a>
+            <a href="https://x.com"><img src="../images/twitter-x.svg" alt="x logo" loading="lazy"></a>
         </div>
 
         <div id="copyright-info">
