@@ -109,6 +109,10 @@ main button {
     padding: 1rem;
 }
 
+#current-weather p {
+    margin-left: 1rem;
+}
+
 #weather-forecast p {
     font-size: 125%;
     padding-left: 1rem;
@@ -146,6 +150,15 @@ picture img {
     width: 150%;
     height: 50%;
     opacity: 90%;
-    filter: drop-shadow(rgb(104, 110, 133) 1rem 1rem 1rem);
+    filter: drop-shadow(lightblue 1rem 1rem 1rem);
     border-radius: 25px;
+}
+
+#spotlights {
+    margin-left: 3rem;
+}
+
+#spotlights img {
+        width: 60%;
+        height: auto;
 }
