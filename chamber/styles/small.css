@@ -79,7 +79,73 @@ main button {
     background-color: darkgray;
 }
 
+.home-card {
+    margin: 0.5rem;
+    background-color: white;
+    text-align: left;
+}
+
+#current-weather {
+    display: grid;
+}
+
+#weather-info {
+    display: inline;
+}
+
+.home-card img {
+    display: inline;
+}
+
+.home-card h3 {
+    margin: 0;
+    grid-column: 1 / 4;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: rgb(178, 190, 228);
+}
+
+#current-events p {
+    padding: 1rem;
+}
+
+#weather-forecast p {
+    font-size: 125%;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    margin-left: 0.5rem;
+}
+
+#hero-image-section {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-rows: repeat(4, minmax(25px, 0.25fr));
+}
+
 picture {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+}
+
+picture img {
     width: 100%;
     height: 100%;
+}
+
+#call-to-action {
+    display: flex;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: rgb(178, 190, 228);
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    height: 50%;
+    opacity: 90%;
+    filter: drop-shadow(rgb(104, 110, 133) 1rem 1rem 1rem);
+    border-radius: 25px;
 }

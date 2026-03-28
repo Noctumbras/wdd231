@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stephen Sanders">
     <meta name="description" 
-        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce directory page.">
-    <title>Chamber Directory - WDD 231 - Web Frontend Development - Stephen Sanders</title>
+        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce home page.">
+    <title>Chamber Home - WDD 231 - Web Frontend Development - Stephen Sanders</title>
 
     <meta property="og:title" content="Chamber Directory - WDD 231 - Web Frontend Development - Stephen Sanders">
-    <meta property="og:description" content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce directory page.">
-    <meta property="og:url" content="https://noctumbras.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://github.com/Noctumbras/wdd231/blob/master/chamber/images/directory_image.jpg">
+    <meta property="og:description" content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce home page.">
+    <meta property="og:url" content="https://noctumbras.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://github.com/Noctumbras/wdd231/blob/master/chamber/home_image.jpg">
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -45,23 +45,25 @@
     </header>
 
     <main>
-        <picture id="hero-image">
-            <source srcset="images/hero-image-medium.webp" media="(min-width: 500px)" width="1280" height="960">
-            <img src="images/hero-image-small.webp" alt="hero image" width="640" height="480" loading="lazy">
-        </picture>
-        <section id="call-to-action">
-            <a href="#">Come join us!</a>
+        <section id="hero-image-section">
+            <picture id="hero-image">
+                <source srcset="images/hero-image-medium.webp" media="(min-width: 500px)" width="1280" height="406">
+                <img src="images/hero-image-small.webp" alt="hero image" width="320" height="240" loading="lazy">
+            </picture>
+            <section id="call-to-action">
+                <a href="#">Come join us!</a>
+            </section>
         </section>
 
         <h2>Home</h2>
         <section id="home-cards-section">
             <section class="home-card" id="current-events">
                 <h3>Events</h3>
-
+                <p>Upcoming and exciting events will be displayed here!</p>
             </section>
             <section class="home-card" id="current-weather">
                 <h3>Current Weather</h3>
-
+                <ul id="weather-info"></ul>
             </section>
             <section class="home-card" id="weather-forecast">
                 <h3>Weather Forecast</h3>

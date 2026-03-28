@@ -1,4 +1,9 @@
 @media screen and (min-width: 500px) {
+    main {
+        margin: 3rem;
+        margin-top: 0rem;
+    }
+
     #companies-grid {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
@@ -6,10 +11,68 @@
     .list-card {
         width: 100%;
     }
+
+    #hero-image-section {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(50px, 1fr));
+        grid-template-rows: repeat(5, minmax(25px, 0.25fr));
+    }
+
+    picture {
+        grid-column: 1 / 7;
+        grid-row: 1 / 6;
+    }
+
+    #call-to-action {
+        grid-column: 5 / 6;
+        padding: 0.5rem;
+    }
+
+    #home-cards-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #current-events {
+        width: 100%;
+        height: auto;
+    }
+
+    #current-weather {
+        width: 40%;
+        height: auto;
+    }
+
+    #weather-forecast {
+        width: 40%;
+        height: auto;
+    }
+
+    #spotlights {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     #companies-grid {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+
+    #current-events {
+        width: 45%;
+        height: auto;
+    }
+
+    #current-weather {
+        width: 25%;
+        height: auto;
+    }
+
+    #weather-forecast {
+        width: 25%;
+        height: auto;
     }
 }

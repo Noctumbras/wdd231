@@ -1,7 +1,9 @@
-const membersData = "data/members.json";
 const spotlightSection = document.querySelector("#spotlights");
 const currentWeather = document.querySelector("#current-weather");
+const weatherInfo = document.querySelector("#weather-info");
 const weatherForecast = document.querySelector("#weather-forecast");
+
+const membersData = "data/members.json";
 const weatherToday = 'https://api.openweathermap.org/data/2.5/weather?lat=34.37&lon=-80.07&units=imperial&appid=d508e21adb0389f533688cfdcbb4ff3c';
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=34.37&lon=-80.07&units=imperial&appid=d508e21adb0389f533688cfdcbb4ff3c';
 
@@ -52,13 +54,13 @@ function fillWeather(data) {
     sunset.textContent = `Sunset: ${time.getHours() - 12}:${time.getMinutes()} PM`;
 
     currentWeather.appendChild(icon);
-    currentWeather.appendChild(temp);
-    currentWeather.appendChild(condition);
-    currentWeather.appendChild(highTemp);
-    currentWeather.appendChild(lowTemp);
-    currentWeather.appendChild(humidity);
-    currentWeather.appendChild(sunrise);
-    currentWeather.appendChild(sunset);
+    weatherInfo.appendChild(temp);
+    weatherInfo.appendChild(condition);
+    weatherInfo.appendChild(highTemp);
+    weatherInfo.appendChild(lowTemp);
+    weatherInfo.appendChild(humidity);
+    weatherInfo.appendChild(sunrise);
+    weatherInfo.appendChild(sunset);
 }
 
 async function forecastFetch () {
