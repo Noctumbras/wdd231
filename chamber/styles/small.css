@@ -150,7 +150,6 @@ picture img {
     width: 150%;
     height: 50%;
     opacity: 90%;
-    filter: drop-shadow(lightblue 1rem 1rem 1rem);
     border-radius: 25px;
 }
 
