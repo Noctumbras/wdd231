@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephen Sanders">
+    <meta name="description" 
+        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce home page.">
+    <title>Chamber Home - WDD 231 - Web Frontend Development - Stephen Sanders</title>
+
+    <meta property="og:title" content="Chamber Directory - WDD 231 - Web Frontend Development - Stephen Sanders">
+    <meta property="og:description" content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce home page.">
+    <meta property="og:url" content="https://noctumbras.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://noctumbras.github.io/wdd231/chamber/images/home_image.jpg">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="../scripts/footer.js" defer></script>
+    <script src="../scripts/nav.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><img src="images/letter-h.svg" alt="logo of the letter H" loading="lazy">Hartsville Chamber of Commerce</h1>
+
+        <button id="nav-button" aria-label="Hamburger Button"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get" action="thankyou.html">
+            <label>First Name<input type="text" name="first-name" title="Your First Name" autocomplete="given-name" required></label>
+            <label>Last Name<input type="text" name="last-name" title="Your Last Name" autocomplete="family-name" required></label>
+            <label>Organizational Title<input type="text" 
+                                        name="organizational-title" 
+                                        title="At least 7 characters. Use only alpha characters, -, and spaces"
+                                        pattern="[A-Za-z\s\-]{7,}" 
+                                        autocomplete="organization-title" 
+                                        required></label>
+            <label>Email Address<input type="email" 
+                                        name="email" 
+                                        title="Your email formatted as: example@domain.com" 
+                                        autocomplete="email"
+                                        placeholder="example@domain.com"
+                                        required></label>
+            <label>Mobile Phone Number<input type="telephone" 
+                                        name="phone-number" 
+                                        title="Your number formatted as XXX-XXX-XXXX"
+                                        autocomplete="tel-national"
+                                        required></label>
+            <label>Business/Organization Name<input type="text" 
+                                        name="business-name" 
+                                        title="Your Organization's Name" 
+                                        autocomplete="organization" 
+                                        required></label>
+
+            <label>Non-Profit<input type="radio" id="non-profit" name="membership-level" value="0" required></label>
+            <label>Bronze<input type="radio" id="bronze" name="membership-level" value="1" required></label>
+            <label>Silver<input type="radio" id="silver" name="membership-level" value="2" required></label>
+            <label>Gold<input type="radio" id="gold" name="membership-level" value="3" required></label>
+
+            <label><input type="hidden" name="timestamp" id="timestamp"></label>
+
+            <label>Business Description
+                <textarea 
+                    id="business-description" 
+                    name="business-description" 
+                    title="A description of your business">
+                </textarea>
+            </label>
+
+            <input type="submit">
+        </form>
+
+        <section id="membership-cards-section">
+            <section id="non-profit-card" class="membership-card">
+                <h3>Non Profit Membership Level</h3>
+                <button id="non-profit-modal-open">Learn More</button>
+            </section>
+            <section id="bronze-card" class="membership-card">
+                <h3>Bronze Membership Level</h3>
+                <button id="bronze-modal-open">Learn More</button>
+            </section>
+            <section id="silver-card" class="membership-card">
+                <h3>Silver Membership Level</h3>
+                <button id="silver-modal-open">Learn More</button>
+            </section>
+            <section id="gold-card" class="membership-card">
+                <h3>Gold Membership Level</h3>
+                <button id="gold-modal-open">Learn More</button>
+            </section>
+        </section>
+
+        <dialog id="non-profit-modal">
+            <li>
+                <ul>There are no fees for non-profit organizations</ul>
+            </li>
+            <button id="non-profit-modal-close">Close</button>
+        </dialog>
+        <dialog id="bronze-modal">
+            <li>
+                <ul>15% discount on events</ul>
+                <ul>15% discount on advertising</ul>
+                <ul>Membership fee of $40/month</ul>
+            </li>
+            <button id="bronze-modal-close">Close</button>
+        </dialog>
+        <dialog id="silver-modal">
+            <li>
+                <ul>25% discount on events</ul>
+                <ul>25% discount on advertising</ul>
+                <ul>Free participation in the trade fair</ul>
+                <ul>Membership fee of $80/month</ul>
+            </li>
+            <button id="silver-modal-close">Close</button>
+        </dialog>
+        <dialog id="gold-modal">
+            <li>
+                <ul>50% discount on events</ul>
+                <ul>50% discount on advertising</ul>
+                <ul>Free participation in the trade fair</ul>
+                <ul>5 free featured ads per year</ul>
+                <ul>1 free training per quarter</ul>
+                <ul>Membership fee of $160/month</ul>
+            </li>
+            <button id="gold-modal-close">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div id="contact-info">
+            <p>Hartsville Chamber of Commerce</p>
+            <p>1010 Chamber Drive</p>
+            <p>info@chambermail.org</p>
+            <p>(803) 555-2939</p>
+        </div>
+        
+
+        <div class="socials">
+            <a href="https://github.com/"><img src="../images/github.svg" alt="github logo" loading="lazy"></a>
+            <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="linkedin logo" loading="lazy"></a>
+            <a href="https://x.com"><img src="../images/twitter-x.svg" alt="x logo" loading="lazy"></a>
+        </div>
+
+        <div id="copyright-info">
+            <span id="current-year"></span>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>
