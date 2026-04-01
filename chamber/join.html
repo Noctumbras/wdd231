@@ -45,101 +45,114 @@
     </header>
 
     <main>
-        <form method="get" action="thankyou.html">
-            <label>First Name<input type="text" name="first-name" title="Your First Name" autocomplete="given-name" required></label>
-            <label>Last Name<input type="text" name="last-name" title="Your Last Name" autocomplete="family-name" required></label>
-            <label>Organizational Title<input type="text" 
-                                        name="organizational-title" 
-                                        title="At least 7 characters. Use only alpha characters, -, and spaces"
-                                        pattern="[A-Za-z\s\-]{7,}" 
-                                        autocomplete="organization-title" 
-                                        required></label>
-            <label>Email Address<input type="email" 
-                                        name="email" 
-                                        title="Your email formatted as: example@domain.com" 
-                                        autocomplete="email"
-                                        placeholder="example@domain.com"
-                                        required></label>
-            <label>Mobile Phone Number<input type="telephone" 
-                                        name="phone-number" 
-                                        title="Your number formatted as XXX-XXX-XXXX"
-                                        autocomplete="tel-national"
-                                        required></label>
-            <label>Business/Organization Name<input type="text" 
-                                        name="business-name" 
-                                        title="Your Organization's Name" 
-                                        autocomplete="organization" 
-                                        required></label>
+        <div id="join-grid">
+            <form method="get" action="thankyou.html">
+                <h2>Membership Application Form</h2>
 
-            <label>Non-Profit<input type="radio" id="non-profit" name="membership-level" value="0" required></label>
-            <label>Bronze<input type="radio" id="bronze" name="membership-level" value="1" required></label>
-            <label>Silver<input type="radio" id="silver" name="membership-level" value="2" required></label>
-            <label>Gold<input type="radio" id="gold" name="membership-level" value="3" required></label>
+                <label>First Name<input type="text" name="first-name" title="Your First Name" autocomplete="given-name" required></label>
+                <label>Last Name<input type="text" name="last-name" title="Your Last Name" autocomplete="family-name" required></label>
+                <label>Organizational Title<input type="text" 
+                                            name="organizational-title" 
+                                            title="At least 7 characters. Use only alpha characters, -, and spaces"
+                                            pattern="[A-Za-z\s\-]{7,}" 
+                                            autocomplete="organization-title" 
+                                            required></label>
+                <label>Email Address<input type="email" 
+                                            name="email" 
+                                            title="Your email formatted as: example@domain.com" 
+                                            autocomplete="email"
+                                            placeholder="example@domain.com"
+                                            required></label>
+                <label>Mobile Phone Number<input type="tel" 
+                                            name="phone-number" 
+                                            title="Your number formatted as XXX-XXX-XXXX"
+                                            autocomplete="tel-national"
+                                            required></label>
+                <label>Business/Organization Name<input type="text" 
+                                            name="business-name" 
+                                            title="Your Organization's Name" 
+                                            autocomplete="organization" 
+                                            required></label>
 
-            <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                <label>Membership Level</label>
+                <div id="membership-radio">
+                    <label>Non-Profit<input type="radio" id="non-profit" name="membership-level" value="np" required></label>
+                    <label>Bronze<input type="radio" id="bronze" name="membership-level" value="bronze" required></label>
+                    <label>Silver<input type="radio" id="silver" name="membership-level" value="silver" required></label>
+                    <label>Gold<input type="radio" id="gold" name="membership-level" value="gold" required></label>
+                </div>
 
-            <label>Business Description
-                <textarea 
-                    id="business-description" 
-                    name="business-description" 
-                    title="A description of your business">
-                </textarea>
-            </label>
+                <label><input type="hidden" name="timestamp" id="timestamp" required></label>
 
-            <input type="submit">
-        </form>
+                <label>Business Description
+                    <textarea 
+                        id="business-description" 
+                        name="business-description" 
+                        title="A description of your business">
+                    </textarea>
+                </label>
 
-        <section id="membership-cards-section">
-            <section id="non-profit-card" class="membership-card">
-                <h3>Non Profit Membership Level</h3>
-                <button id="non-profit-modal-open">Learn More</button>
+                <input type="submit" value="Apply for Membership">
+            </form>
+
+            <section id="membership-cards-section">
+                <h2>Membership Levels</h2>
+
+                <section id="non-profit-card" class="membership-card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button id="non-profit-modal-open">Learn More</button>
+                </section>
+                <section id="bronze-card" class="membership-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="bronze-modal-open">Learn More</button>
+                </section>
+                <section id="silver-card" class="membership-card">
+                    <h3>Silver Membership Level</h3>
+                    <button id="silver-modal-open">Learn More</button>
+                </section>
+                <section id="gold-card" class="membership-card">
+                    <h3>Gold Membership Level</h3>
+                    <button id="gold-modal-open">Learn More</button>
+                </section>
             </section>
-            <section id="bronze-card" class="membership-card">
-                <h3>Bronze Membership Level</h3>
-                <button id="bronze-modal-open">Learn More</button>
-            </section>
-            <section id="silver-card" class="membership-card">
-                <h3>Silver Membership Level</h3>
-                <button id="silver-modal-open">Learn More</button>
-            </section>
-            <section id="gold-card" class="membership-card">
-                <h3>Gold Membership Level</h3>
-                <button id="gold-modal-open">Learn More</button>
-            </section>
-        </section>
+        </div>
 
         <dialog id="non-profit-modal">
-            <li>
-                <ul>There are no fees for non-profit organizations</ul>
-            </li>
+            <h3>Non-Profit Member Benefits</h3>
+            <ul>
+                <li>There are no fees for non-profit organizations</li>
+            </ul>
             <button id="non-profit-modal-close">Close</button>
         </dialog>
         <dialog id="bronze-modal">
-            <li>
-                <ul>15% discount on events</ul>
-                <ul>15% discount on advertising</ul>
-                <ul>Membership fee of $40/month</ul>
-            </li>
+            <h3>Bronze Member Benefits</h3>
+            <ul>
+                <li>15% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Membership fee of $40/month</li>
+            </ul>
             <button id="bronze-modal-close">Close</button>
         </dialog>
         <dialog id="silver-modal">
-            <li>
-                <ul>25% discount on events</ul>
-                <ul>25% discount on advertising</ul>
-                <ul>Free participation in the trade fair</ul>
-                <ul>Membership fee of $80/month</ul>
-            </li>
+            <h3>Silver Member Benefits</h3>
+            <ul>
+                <li>25% discount on events</li>
+                <li>25% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Membership fee of $80/month</li>
+            </ul>
             <button id="silver-modal-close">Close</button>
         </dialog>
         <dialog id="gold-modal">
-            <li>
-                <ul>50% discount on events</ul>
-                <ul>50% discount on advertising</ul>
-                <ul>Free participation in the trade fair</ul>
-                <ul>5 free featured ads per year</ul>
-                <ul>1 free training per quarter</ul>
-                <ul>Membership fee of $160/month</ul>
-            </li>
+            <h3>Gold Member Benefits</h3>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Membership fee of $160/month</li>
+            </ul>
             <button id="gold-modal-close">Close</button>
         </dialog>
     </main>
