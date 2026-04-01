@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stephen Sanders">
     <meta name="description" 
-        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce home page.">
+        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce join page.">
     <title>Chamber Home - WDD 231 - Web Frontend Development - Stephen Sanders</title>
 
-    <meta property="og:title" content="Chamber Directory - WDD 231 - Web Frontend Development - Stephen Sanders">
-    <meta property="og:description" content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce home page.">
+    <meta property="og:title" content="Chamber Join - WDD 231 - Web Frontend Development - Stephen Sanders">
+    <meta property="og:description" content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Chamber of Commerce join page.">
     <meta property="og:url" content="https://noctumbras.github.io/wdd231/chamber/index.html">
-    <meta property="og:image" content="https://noctumbras.github.io/wdd231/chamber/images/home_image.jpg">
+    <meta property="og:image" content="https://noctumbras.github.io/wdd231/chamber/images/join_image.jpg">
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -65,8 +65,8 @@
                                             required></label>
                 <label>Mobile Phone Number<input type="tel" 
                                             name="phone-number" 
-                                            title="Your number formatted as XXX-XXX-XXXX"
-                                            autocomplete="tel-national"
+                                            title="Your number formatted as X-XXX-XXX-XXXX"
+                                            autocomplete="tel"
                                             required></label>
                 <label>Business/Organization Name<input type="text" 
                                             name="business-name" 
@@ -76,13 +76,13 @@
 
                 <label>Membership Level</label>
                 <div id="membership-radio">
-                    <label>Non-Profit<input type="radio" id="non-profit" name="membership-level" value="np" required></label>
-                    <label>Bronze<input type="radio" id="bronze" name="membership-level" value="bronze" required></label>
-                    <label>Silver<input type="radio" id="silver" name="membership-level" value="silver" required></label>
-                    <label>Gold<input type="radio" id="gold" name="membership-level" value="gold" required></label>
+                    <label><input type="radio" id="non-profit" name="membership-level" value="np" required>Non-Profit</label>
+                    <label><input type="radio" id="bronze" name="membership-level" value="bronze" required>Bronze</label>
+                    <label><input type="radio" id="silver" name="membership-level" value="silver" required>Silver</label>
+                    <label><input type="radio" id="gold" name="membership-level" value="gold" required>Gold</label>
                 </div>
 
-                <label><input type="hidden" name="timestamp" id="timestamp" required></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
 
                 <label>Business Description
                     <textarea 

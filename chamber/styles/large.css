@@ -69,6 +69,18 @@
         grid-column: 3 / 6;
     }
 
+    input[type=submit] {
+        margin: 1rem 6rem 2rem 6rem;
+        padding: 1.5rem;
+    }
+
+    .membership-card button {
+        margin: 2rem 10rem 0rem 10rem;
+    }
+
+    dialog {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -89,5 +101,9 @@
     #weather-forecast {
         width: 25%;
         height: auto;
+    }
+
+    dialog {
+        width: 25%;
     }
 }

@@ -178,6 +178,16 @@ input[type=submit] {
     padding: 1rem;
 }
 
+@keyframes slide-in {
+    from {
+        translate: 125% 0;
+    }
+
+    to {
+        translate: 0 0;
+    }
+}
+
 .membership-card {
     display: flex;
     flex-direction: column;
@@ -187,9 +197,72 @@ input[type=submit] {
     margin: 2rem;
     padding: 2rem;
     text-align: center;
+    animation-name: slide-in;
+    animation-duration: 2.5s;
+}
+
+#bronze-card {
+    animation-duration: 3s;
+}
+
+#silver-card {
+    animation-duration: 3.5s;
+}
+
+#gold-card {
+    animation-duration: 4s;
 }
 
 .membership-card button {
     margin: 2rem 2rem 0rem 2rem;
     padding: 1rem;
+}
+
+.membership-card button:hover {
+    background-color: lightgray;
+}
+
+
+#membership-radio label {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=radio] {
+    margin-right: 0.5rem;
+}
+
+#form-summary {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+#form-summary p {
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+#form-summary:nth-child(even) {
+    background-color: rgb(212, 212, 212);
+}
+
+dialog {
+    width: 75%;
+}
+
+dialog h3 {
+    text-align: center;
+}
+
+dialog button {
+    margin-left: 20%;
+    width: 60%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+dialog button:hover {
+    background-color: lightgray;
 }
