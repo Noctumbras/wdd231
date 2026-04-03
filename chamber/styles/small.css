@@ -266,3 +266,45 @@ dialog button {
 dialog button:hover {
     background-color: lightgray;
 }
+
+.place-cards-div {
+    display: grid;
+}
+
+.place-card {
+    background-color: white;
+    border-radius: 25px;
+    margin: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas:
+    "name"
+    "image"
+    "description"
+    "location"
+    "learn-more";
+}
+
+.place-card h2 {
+    grid-area: name;
+}
+
+.place-card figure {
+    width: 300px;
+    height: auto;
+    grid-area: image;
+}
+
+.place-card p {
+    grid-area: description;
+}
+
+.place-card address {
+    grid-area: location;
+}
+
+.place-card button {
+    grid-area: learn-more;
+}

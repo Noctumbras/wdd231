@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 641px) {
     main {
         margin: 3rem;
         margin-top: 0rem;
@@ -81,9 +81,21 @@
     dialog {
         width: 50%;
     }
+
+    .place-card {
+        grid-template-areas:
+        "name name"
+        "image description"
+        "image location"
+        "learn-more learn-more";
+    }
+
+    .place-card figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
     #companies-grid {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
@@ -105,5 +117,10 @@
 
     dialog {
         width: 25%;
+    }
+
+    #place-cards-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
