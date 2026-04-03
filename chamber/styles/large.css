@@ -1,3 +1,12 @@
+@media screen and (min-width: 500px) {
+    .place-card figure {
+    width: 300px;
+    height: auto;
+    margin: 1.5rem 20% 1.5rem 20%;
+    grid-area: image;
+}
+}
+
 @media screen and (min-width: 641px) {
     main {
         margin: 3rem;
@@ -83,6 +92,7 @@
     }
 
     .place-card {
+        text-align: left;
         grid-template-areas:
         "name name"
         "image description"
@@ -90,7 +100,15 @@
         "learn-more learn-more";
     }
 
-    .place-card figure:hover {
+    .place-card h2 {
+        margin: 0.25rem 0rem 1rem 0rem;
+    }
+
+    .place-card figure {
+        margin: 0rem 1rem 0rem 0rem;
+    }
+
+    .place-card figure img:hover {
         box-shadow: 0 0 50px #333;
     }
 }
