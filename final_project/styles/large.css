@@ -41,16 +41,26 @@
     #daily-cards {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
 
-    #rabbit-breed-card {
-        width: 45%;
-        height: auto;
+    #active-quiz {
+        grid-template-areas: 
+        "question question"
+        "answerRow_1 answerRow_1"
+        "answerRow_2 answerRow_2";
     }
 
-    #rabbit-fact-card {
-        width: 45%;
-        height: auto;
+    #active-quiz p {
+        grid-area: question;
+    }
+
+    #answerzero, #answerone {
+        grid-area: answerRow_1;
+    }
+
+    #answertwo, #answerthree {
+        grid-area: answerRow_2;
     }
 }
 

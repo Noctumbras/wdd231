@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script type="module "src="scripts/inquiries.mjs"></script>
+    <script type="module" src="scripts/inquiries.mjs"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,15 +45,16 @@
     </header>
 
     <main>
+        <h2>Got a question? Ask away!</h2>
         <form method="get" action="inquiries_thanks.html">
-            <label>Name<input type="text" name="name" title="Your Name" autocomplete="given-name" required></label>
-            <label>Email Address<input type="email" 
+            <label id="name-label">Name <input type="text" name="name" title="Your Name" autocomplete="given-name" required></label>
+            <label id="email-label">Email Address <input type="email" 
                                             name="email" 
                                             title="Your email formatted as: example@domain.com" 
                                             autocomplete="email"
                                             placeholder="example@domain.com"
                                             required></label>
-            <label>Your Question
+            <label id="question-label">Your Question 
                     <textarea 
                         id="question-input"
                         name="question" 
@@ -61,7 +62,7 @@
                     </textarea>
             </label>
 
-            <input type="submit" value="Send Your Question">
+            <input type="submit" value="Send Your Question" id="submit-question-button">
         </form>
     </main>
 

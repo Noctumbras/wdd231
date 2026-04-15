@@ -12,6 +12,7 @@ body {
 
 main {
     background-color: var(--content-background-color);
+    padding-bottom: 1rem;
 }
 
 footer {
@@ -86,6 +87,10 @@ h1 {
     color: white;
 }
 
+h2 {
+    text-align: center;
+}
+
 picture {
     width: 100%;
     height: auto;
@@ -154,7 +159,6 @@ picture img {
     margin: 0px;
     padding: 5%;
     background-color: var(--header-background-color);
-    text-align: center;
 }
 
 .card h3 {
@@ -163,16 +167,86 @@ picture img {
 
 #start-quiz {
     display: grid;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 #start-quiz.hide {
     display: none;
 }
 
+#start-quiz button {
+    font-size: 1.5rem;
+    margin: 1rem 4rem 1rem 4rem;
+    padding: 1rem;
+}
+
 #active-quiz {
     display: none;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 #active-quiz.show {
     display: grid;
+}
+
+#active-quiz button {
+    font-size: 1.5rem;
+    margin: 1rem 4rem 1rem 4rem;
+    padding: 1rem;
+}
+
+form {
+    display: grid;
+    grid-template-areas: 
+    "name-label name-input"
+    "email-label email-input"
+    "question-label question-input"
+    "submit submit";
+    justify-items: right;
+}
+
+#name-label {
+    grid-area: name-label;
+}
+
+#name-label input {
+    grid-area: name-input;
+}
+
+#email-label {
+    grid-area: email-label;
+}
+
+#email-label input {
+    grid-area: email-input;
+}
+
+#question-label {
+    grid-area: question-label;
+}
+
+#question-label input {
+    grid-area: question-input;
+}
+
+#submit-question-button {
+    grid-area: submit;
+    justify-self: center;
+}
+
+input {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+#form-summary {
+    margin: 1rem;
+}
+
+dialog:open {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding: 2rem;
 }
