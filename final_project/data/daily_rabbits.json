@@ -1,0 +1,55 @@
+{
+    "facts": [
+        "fact one",
+        "fact two",
+        "fact three",
+        "fact four",
+        "fact five",
+        "fact six",
+        "fact seven"
+    ],
+    "breeds": [
+        {
+            "name": "Belgian Hare",
+            "sizeMin": 8,
+            "sizeMax": 9.5,
+            "description": "lorem ipsum",
+            "imageURL": "images/placeholder.webp"
+        },
+        {
+            "name": "Californian",
+            "sizeMin": 9,
+            "sizeMax": 10.5,
+            "description": "lorem ipsum",
+            "imageURL": "images/placeholder.webp"
+        },
+        {
+            "name": "Dwarf Lop",
+            "sizeMin": 4.25,
+            "sizeMax": 5.25,
+            "description": "lorem ipsum",
+            "imageURL": "images/placeholder.webp"
+        },
+        {
+            "name": "Flemish Giant",
+            "sizeMin": 14,
+            "sizeMax": 25,
+            "description": "lorem ipsum",
+            "imageURL": "images/placeholder.webp"
+        },
+        {
+            "name": "Netherland Dwarf",
+            "sizeMin": 1.1,
+            "sizeMax": 2.5,
+            "description": "lorem ipsum",
+            "imageURL": "images/placeholder.webp"
+        },
+        {
+            "name": "Rhinelander",
+            "sizeMin": 9,
+            "sizeMax": 10,
+            "description": "lorem ipsum",
+            "imageURL": "images/placeholder.webp"
+        }
+    ]
+}

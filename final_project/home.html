@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephen Sanders">
+    <meta name="description" 
+        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Project home page.">
+    <title>Project Home - WDD 231 - Web Frontend Development - Stephen Sanders</title>
+
+    <meta property="og:title" content="Project Home - WDD 231 - Web Frontend Development - Stephen Sanders">
+    <meta property="og:description" content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Project home page.">
+    <meta property="og:url" content="https://noctumbras.github.io/wdd231/project/home.html">
+    <meta property="og:image" content="#">
+
+    <link rel="icon" href="#">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module "src="scripts/home.mjs"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section id="title-hero-image">
+            <h1>Rabbits & You</h1>
+            <picture>
+                <source srcset="images/hero-image.webp" media="(min-width: 400px)" width="1280" height="392">
+                <img src="images/hero-image-small.webp" alt="Image of Chicago" width="398" height="191">
+            </picture>
+        </section>
+        <button id="nav-button" aria-label="Hamburger Button">Home</button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="inquiries.html">Inquiries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home-page-introduction">
+            <p>Lorem ipsum</p>
+        </div>
+
+        <section id="info-section">
+            <button type="button" class="dropdown" id="dropdown-button-habitat">Habitat</button>
+            <section class="dropdown-content" id="dropdown-section-habitat">
+                <img src="images/placeholder.webp" alt="alt text" loading="lazy" width="300" height="200">
+                <p>Lorem ipsum</p>
+            </section>
+
+            <button type="button" class="dropdown" id="dropdown-button-diet">Diet</button>
+            <section class="dropdown-content" id="dropdown-section-diet">
+                <img src="images/placeholder.webp" alt="alt text" loading="lazy" width="300" height="200">
+                <p>Lorem ipsum</p>
+            </section>
+
+            <button type="button" class="dropdown" id="dropdown-button-behavior">Behavior</button>
+            <section class="dropdown-content" id="dropdown-section-behavior">
+                <img src="images/placeholder.webp" alt="alt text" loading="lazy" width="300" height="200">
+                <p>Lorem ipsum</p>
+            </section>
+
+            <button type="button" class="dropdown" id="dropdown-button-health">Health</button>
+            <section class="dropdown-content" id="dropdown-section-health">
+                <img src="images/placeholder.webp" alt="alt text" loading="lazy" width="300" height="200">
+                <p>Lorem ipsum</p>
+            </section>
+        </section>
+
+        <div id="daily-cards">
+            <section class="card" id="rabbit-breed-card">
+                <h2>Rabbit Breed of the Day</h2>
+            </section>
+            <section class="card" id="rabbit-fact-card">
+                <h2>Rabbit Fact of the Day</h2>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div id="copyright-info">
+            <span id="current-year"></span>
+            <p id="last-modified"></p>
+            <a href="attributions.html">Attributions</a>
+        </div>
+    </footer>
+</body>
+</html>

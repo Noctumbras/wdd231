@@ -1,0 +1,61 @@
+@media screen and (min-width: 500px) {
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #nav-button {
+        display: none;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    #home-page-introduction {
+        width: 100%;
+    }
+
+    #info-section {
+        width: 100%;
+        height: auto;
+        grid-area: dropdown;
+    }
+
+    .dropdown-content {
+        grid-template-areas: "image text";
+    }
+
+    .dropdown-content img {
+        grid-area: image;
+    }
+
+    .dropdown-content p {
+        grid-area: text;
+    }
+
+    #daily-cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #rabbit-breed-card {
+        width: 30%;
+        height: auto;
+    }
+
+    #rabbit-fact-card {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    picture img {
+        width: auto;
+    }
+}
