@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stephen Sanders">
     <meta name="description" 
-        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Project quiz page.">
-    <title>Project Quiz - WDD 231 - Web Frontend Development - Stephen Sanders</title>
+        content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Project inquiries page.">
+    <title>Project Inquiries - WDD 231 - Web Frontend Development - Stephen Sanders</title>
 
     <meta property="og:title" content="Project Home - WDD 231 - Web Frontend Development - Stephen Sanders">
-    <meta property="og:description" content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Project quiz page.">
+    <meta property="og:description" content="Webpage by Stephen Sanders for WDD 231 - Web Frontend Development. Project inquiries page.">
     <meta property="og:url" content="https://noctumbras.github.io/wdd231/project/quiz.html">
     <meta property="og:image" content="#">
 
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script type="module "src="scripts/quiz.mjs"></script>
+    <script type="module "src="scripts/thanks.mjs"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,34 +34,19 @@
                 <img src="images/hero-image-small.webp" alt="Image of Chicago" width="398" height="191">
             </picture>
         </section>
-        <button id="nav-button" aria-label="Hamburger Button">Quiz</button>
+        <button id="nav-button" aria-label="Hamburger Button">Inquiries</button>
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li class="current"><a href="quiz.html">Quiz</a></li>
-                <li><a href="inquiries.html">Inquiries</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li class="current"><a href="inquiries.html">Inquiries</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="quiz-section" id="start-quiz">
-            <p>Quiz yourself on your rabbit knowledge! Click 'Short' for a shorter quiz or 'Full' for the full quiz.</p>
-            <p id="last-result"></p>
-            <button id="short-button">Short</button>
-            <button id="full-button">Full</button>
-        </section>
-        <section class="quiz-section" id="active-quiz">
-            <p id="quiz-question"></p>
-            <button id="answer-zero" value="0"></button>
-            <button id="answer-one" value="1"></button>
-            <button id="answer-two" value="2"></button>
-            <button id="answer-three" value="3"></button>
-        </section>
-        <dialog id="quiz-modal">
-            <section id="question-result"></section>
-            <button id="close-modal">Close</button>
-        </dialog>
+        <h2>Thanks for your question! We'll get back to you as soon as we can.</h2>
+        <div id="form-summary"></div>
     </main>
 
     <footer>

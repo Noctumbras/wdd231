@@ -36,7 +36,7 @@ footer {
 }
 
 .navigation a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -159,4 +159,20 @@ picture img {
 
 .card h3 {
     margin: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+#start-quiz {
+    display: grid;
+}
+
+#start-quiz.hide {
+    display: none;
+}
+
+#active-quiz {
+    display: none;
+}
+
+#active-quiz.show {
+    display: grid;
 }

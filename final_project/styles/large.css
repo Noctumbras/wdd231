@@ -43,10 +43,6 @@
         flex-direction: row;
     }
 
-    #daily-cards h2 {
-        height: minmax(auto, 3rem);
-    }
-
     #rabbit-breed-card {
         width: 45%;
         height: auto;
