@@ -13,50 +13,50 @@
             "name": "Alaskan",
             "sizeMin": 7,
             "sizeMax": 9,
-            "description": "lorem ipsum",
+            "description": "A german rabbit breed created by a rabbit judge named Max Fischer with the goal of making a rabbit with similar looks to the Alaskan Fox. Instead, they ended up with this jet-black furred rabbit breed.",
             "imageURL": "images/Alaska_schwarz.webp"
         },
         {
             "name": "Belgian Hare",
             "sizeMin": 8,
             "sizeMax": 9.5,
-            "description": "lorem ipsum",
-            "imageURL": "images/placeholder.webp"
+            "description": "The breed responsible for launching the domestic rabbit industry. It was selectively bred to resemble wild European hares.",
+            "imageURL": "images/belgian_hare.webp"
         },
         {
             "name": "Californian",
             "sizeMin": 9,
             "sizeMax": 10.5,
-            "description": "lorem ipsum",
-            "imageURL": "images/placeholder.webp"
+            "description": "A breed developed for the fur and meat industries in 1923. They have dense, plush fur coats.",
+            "imageURL": "images/californian.webp"
         },
         {
-            "name": "Dwarf Lop",
+            "name": "Mini Lop",
             "sizeMin": 4.25,
             "sizeMax": 5.25,
-            "description": "lorem ipsum",
-            "imageURL": "images/placeholder.webp"
+            "description": "Discovered at a German National Rabbit Show in 1972, mini lops have a small rounded body. They were previously called 'Klein Widders.'",
+            "imageURL": "images/mini_lop.webp"
         },
         {
             "name": "Flemish Giant",
             "sizeMin": 14,
             "sizeMax": 25,
-            "description": "lorem ipsum",
-            "imageURL": "images/placeholder.webp"
+            "description": "The earliest records of this dog-sized breed are from roughly 1860. They make for docile pets.",
+            "imageURL": "images/flemish_giant.webp"
         },
         {
             "name": "Netherland Dwarf",
             "sizeMin": 1.1,
             "sizeMax": 2.5,
-            "description": "lorem ipsum",
-            "imageURL": "images/placeholder.webp"
+            "description": "The earliest Netherland Dwarfs had fearful, aggressive temperaments. Present day dwarfs instead have a gentle, friendly, and energetic disposition.",
+            "imageURL": "images/netherland_dwarf.webp"
         },
         {
             "name": "Rhinelander",
             "sizeMin": 9,
             "sizeMax": 10,
-            "description": "lorem ipsum",
-            "imageURL": "images/placeholder.webp"
+            "description": "Similar in appearance to the Checkered Giant, the Rhinelander has a trim athletic appearance.",
+            "imageURL": "images/rhinelander.webp"
         }
     ]
 }
