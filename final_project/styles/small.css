@@ -245,8 +245,7 @@ input {
     margin: 1rem;
 }
 
-dialog:open {
-    display: grid;
+dialog {
     justify-items: center;
     text-align: center;
     padding: 2rem;
