@@ -10,6 +10,13 @@
     ],
     "breeds": [
         {
+            "name": "Alaskan",
+            "sizeMin": 7,
+            "sizeMax": 9,
+            "description": "lorem ipsum",
+            "imageURL": "images/Alaska_schwarz.webp"
+        },
+        {
             "name": "Belgian Hare",
             "sizeMin": 8,
             "sizeMax": 9.5,
